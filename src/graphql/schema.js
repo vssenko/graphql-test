@@ -57,8 +57,13 @@ function _loadMutations() {
 
 function _loadItemsMapFromFolder(folder) {
   const items = {};
-  fs.readdirSync(path.join(__dirname, folder)).map(fileName => path.parse(path.basename(fileName)).name).forEach(item => {
-    items[item] = require(`${folder}/${item}`);
-  });
+  try {
+    fs.readdirSync(path.join(__dirname, folder)).map(fileName => path.parse(path.basename(fileName)).name).forEach(item => {
+      items[item] = require(`${folder}/${item}`);
+    });
+  } catch (e) {
+    console.error('Failed to load items from folder ' + folder);
+  }
+
   return items;
 }
