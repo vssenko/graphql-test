@@ -1,0 +1,25 @@
+{
+  "name": "backend-quiz",
+  "version": "1.0.0",
+  "description": "Backend quiz for CarDash",
+  "scripts": {
+    "dev": "nodemon --exec node --inspect scripts/dev.js --port 3000",
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "Evan Rosenfeld <evan@cardash.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.10.5",
+    "lodash": "^4.17.4",
+    "minimist": "^1.2.0",
+    "pluralize": "^7.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-google": "^0.9.1",
+    "jest": "^19.0.2"
+  }
+}
