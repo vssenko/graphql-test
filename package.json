@@ -1,14 +1,14 @@
 {
-  "name": "backend-quiz",
+  "name": "graphql-test",
   "version": "1.0.0",
-  "description": "Backend quiz for CarDash",
+  "description": "GraphQL test project.",
   "scripts": {
-    "dev": "nodemon --exec node --inspect scripts/dev.js --port 3000",
+    "dev": "nodemon --exec node --inspect bin/start.js --port 3000",
     "test": "jest --verbose"
   },
   "keywords": [],
-  "author": "Evan Rosenfeld <evan@cardash.com>",
-  "license": "SEE LICENSE IN LICENSE",
+  "author": "Vitaly Senko",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "eslint-config-google": "^0.9.1",
-    "jest": "^19.0.2"
+    "jest": "^19.0.2",
+    "nodemon": "^1.18.4"
   }
 }
